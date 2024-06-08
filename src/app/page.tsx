@@ -13,9 +13,9 @@ export default function Home() {
           <span className="text-4xl">Hello! My name is</span>
           <span className="text-6xl text-orange-400">Juan Antonio Figuera!</span>
           <span className="text-5xl">A Software Developer.</span>
-          <span className="text-2xl">I&apos;ve loved programming ever since high school. I work with both Desktop and Web Development.</span>
-          <span className="text-2xl">I can speak Spanish, English, a bit of German, and an even smaller bit of Japanese.</span>
-          <span className="text-2xl">Feel free to go through the links above to check out what kind of stuff I&apos;ve done!</span>
+          <span className="text-3xl">I&apos;ve loved programming ever since high school. I work with both Desktop and Web Development.</span>
+          <span className="text-xl">I can speak Spanish, English, a bit of German, and an even smaller bit of Japanese.</span>
+          <span className="text-xl">Feel free to go through the links above to check out what kind of stuff I&apos;ve done!</span>
         </div>
       </div>
     </main>
