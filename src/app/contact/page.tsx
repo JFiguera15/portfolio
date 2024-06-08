@@ -10,6 +10,7 @@ export default function Home() {
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     let data = {
       name,
       email,
@@ -24,10 +25,13 @@ export default function Home() {
       body: JSON.stringify(data)
     });
     toast.promise(promise, {
-      loading:"Sending...",
-      success:"Sent succesfully!",
-      error:"Error"
+      loading: "Sending...",
+      success: "Sent succesfully!",
+      error: "Error"
     })
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
 
@@ -38,13 +42,13 @@ export default function Home() {
       <div className="mx-auto flex flex-col">
         <form className="flex flex-col space-y-3 md:space-y-4 w-96 " name='form'>
           <label htmlFor='name' className='text-2xl md:text-3xl'>Name:</label>
-          <input type='text' name='name' onChange={(e) => { setName(e.target.value) }} className='text-black rounded-md h-9 px-2' required />
+          <input type='text' name='name' value={name} onChange={(e) => { setName(e.target.value) }} className='text-black rounded-md h-9 px-2' required />
 
           <label htmlFor='email' className='text-2xl md:text-3xl'>Email:</label>
-          <input type='email' name='email' onChange={(e) => { setEmail(e.target.value) }} className='text-black rounded-md h-9 px-2' required />
+          <input type='email' name='email' value={email} onChange={(e) => { setEmail(e.target.value) }} className='text-black rounded-md h-9 px-2' required />
 
           <label htmlFor='message' className='text-2xl md:text-3xl'>Message:</label>
-          <textarea name='message' onChange={(e) => { setMessage(e.target.value) }} className='text-black rounded-md h-36 px-2' required />
+          <textarea name='message' value={message} onChange={(e) => { setMessage(e.target.value) }} className='text-black rounded-md h-36 px-2' required />
 
           <input type='submit' onClick={(e) => { handleSubmit(e) }} className='mt-2 bg-secondary text-black hover:bg-slate-400 w-28 snap-center' />
         </form >
