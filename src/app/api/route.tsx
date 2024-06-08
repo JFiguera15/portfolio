@@ -5,7 +5,7 @@ export async function POST(request: Request) {
         port: 465,
         host: "smtp.gmail.com",
         auth: {
-            user: 'creiaisoftworks@gmail.com',
+            user: process.env.email,
             pass: process.env.password,
         },
         secure: true,
