@@ -2,7 +2,7 @@ import Image from "next/image";
 
 
 function ProjectCard({ title, image, text, tech, link }) {
-  return <div className="flex flex-col border-4 border-orange-400 shadow-xl rounded-md bg-secondary text-black text-center max-w-96 space-y-4 mx-auto max-h-max">
+  return <div className="flex flex-col border-4 p-2 border-orange-400 shadow-xl rounded-md bg-secondary text-black text-center max-w-96 space-y-4 mx-auto max-h-max">
     <span className="text-2xl font-bold">{title}</span>
     <Image
       src="/picture.jpg"
@@ -30,7 +30,7 @@ export default function Projects() {
   return (
     <main className="flex flex-col mt-12">
       <div className="mx-auto flex flex-col space-y-4 md:space-y-0">
-        <h1 className="text-4xl text-center mb-4 md:mb-12">List of projects I&apos;ve made:</h1>
+        <h1 className="text-4xl text-center mb-4 md:mb-12">Projects I&apos;ve made:</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 md:space-x-4 space-y-4 md:space-y-0 ">
           <ProjectCard
             title={"Automatic TTS Reader"}

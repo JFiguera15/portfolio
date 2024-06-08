@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Comfortaa, Gabarito} from "next/font/google";
 import "./globals.css";
 import Link from 'next/link'
-import Image from "next/image";
-
 const inter = Inter({ subsets: ["latin"] });
+const comfortaa = Comfortaa({ subsets: ["latin"] });
+const gabarito = Gabarito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Juan Antonio Figuera",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col">
+      <body className={gabarito.className}>
         <ul className="flex flex-row mt-8 space-x-4 font-bold text-xl md:text-3xl justify-center md:justify-end md:pr-10 [&_li:hover]:text-secondary">
           <li className="my-auto cursor-pointer"><Link href="/">About me</Link></li>
           <li className="my-auto"><Link href="/projects">Projects</Link></li>
