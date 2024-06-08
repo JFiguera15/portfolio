@@ -11,6 +11,19 @@ export async function POST(request: Request) {
         secure: true,
     })
 
+    await new Promise((resolve, reject) => {
+        // verify connection configuration
+        transporter.verify(function (error, success) {
+            if (error) {
+                console.log(error);
+                reject(error);
+            } else {
+                console.log("Server is ready to take our messages");
+                resolve(success);
+            }
+        });
+    });
+
     const mailData = {
         from: 'creiaisoftworks@gmail.com',
         to: 'juanantoniofiguera@gmail.com',
@@ -19,12 +32,19 @@ export async function POST(request: Request) {
         html: `<div>${res.message}</div><p>Sent from:
         ${res.email}</p>`
     }
-    transporter.sendMail(mailData, function (err, info) {
-        if (err)
-            console.log(err)
-        else
-            console.log(info)
-    })
+
+    await new Promise((resolve, reject) => {
+        // send mail
+        transporter.sendMail(mailData, (err, info) => {
+            if (err) {
+                console.error(err);
+                reject(err);
+            } else {
+                console.log(info);
+                resolve(info);
+            }
+        });
+    });
 
     return Response.json({ res })
 }
