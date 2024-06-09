@@ -40,13 +40,13 @@ export default function Home() {
       <Toaster />
       <div className="mx-auto flex flex-col">
         <form className="flex flex-col space-y-3 md:space-y-4 w-96 text-secondary font-semibold" name='form' onSubmit={(e) => { handleSubmit(e) }}>
-          <label htmlFor='name' className='text-2xl md:text-3xl'>Name:</label>
+          <label htmlFor='name' className='text-2xl md:text-3xl'>Your name:</label>
           <input type='text' name='name' value={name} onChange={(e) => { setName(e.target.value) }} className='text-black rounded-md h-9 px-2 border border-secondary' required />
 
-          <label htmlFor='email' className='text-2xl md:text-3xl'>Email:</label>
+          <label htmlFor='email' className='text-2xl md:text-3xl'>Your Email:</label>
           <input type='email' name='email' value={email} onChange={(e) => { setEmail(e.target.value) }} className='text-black rounded-md h-9 px-2 border border-secondary' required />
 
-          <label htmlFor='message' className='text-2xl md:text-3xl'>Message:</label>
+          <label htmlFor='message' className='text-2xl md:text-3xl'>Your message:</label>
           <textarea name='message' value={message} onChange={(e) => { setMessage(e.target.value) }} className='text-black rounded-md h-36 px-2 border border-secondary' required />
 
           <input type='submit' className='mt-2 hover:bg-secondary hover:text-slate-400 text-black bg-slate-400 w-28 border border-secondary' />

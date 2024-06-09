@@ -2,7 +2,7 @@ import Image from "next/image";
 
 
 function ProjectCard({ title, image, text, tech, link }) {
-  return <div className="flex flex-col border-4 p-2 border-primary shadow-xl rounded-md bg-secondary text-gray-400 text-center max-w-96 space-y-4 mx-auto max-h-max">
+  return <div className="flex flex-col border-4 p-4 border-primary shadow-xl rounded-md bg-secondary text-gray-300 text-center max-w-96 space-y-4 mx-auto max-h-max">
     <span className="text-2xl font-bold">{title}</span>
     <Image
       src={"/" + image}
@@ -22,7 +22,7 @@ function ProjectCard({ title, image, text, tech, link }) {
           /></li>
       ))}
     </ul>
-    <a className="text-sm" href={link} target="_blank">Repository</a>
+    <a className="text-sm underline font-semibold hover:text-gray-500" href={link} target="_blank">Repository</a>
   </div>;
 }
 
