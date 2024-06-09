@@ -8,6 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        fadeDown: {
+          '0%': { transform: 'translateY(-30px) scale(0.9)', opacity:'0'},
+          '100%': { transform: 'translateY(0px) scale(1)', opacity:'1' },
+        },
+        fadeUp: {
+          '0%': { transform: 'translateY(30px) scale(0.9)', opacity:'0'},
+          '100%': { transform: 'translateY(0px) scale(1)', opacity:'1' },
+        }
+      },
+      animation: {
+        fadeDown: 'fadeDown 0.5s ease-in-out',
+        fadeUp: 'fadeUp 0.5s ease-in-out',
+      },
       colors: {
         primary: "#606c38",
         secondary: "#14213d"

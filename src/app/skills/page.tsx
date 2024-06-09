@@ -2,8 +2,8 @@ export default function Home() {
   return (
     <main className="flex flex-col mt-12">
       <div className="flex flex-col mx-auto">
-        <h1 className="text-4xl text-center text-secondary font-extrabold">My Skills:</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-6">
+        <h1 className="text-4xl text-center text-secondary font-extrabold animate-fadeDown">My Skills:</h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-6 animate-fadeUp">
           <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary">
             <span className="font-bold">Web Development</span>
             <ul className="list-disc list-inside ml-3">

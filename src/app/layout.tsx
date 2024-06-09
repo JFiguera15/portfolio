@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={gabarito.className}>
-        <ul className="flex flex-row mt-8 space-x-4 font-bold text-xl md:text-3xl justify-center md:justify-end md:pr-10 [&_li:hover]:text-primary text-secondary">
+        <ul className="flex flex-row mt-8 space-x-4 font-bold text-xl md:text-3xl justify-center md:justify-end md:pr-10 [&_li:hover]:text-primary text-secondary animate-fadeDown">
           <li className="my-auto cursor-pointer"><Link href="/">About me</Link></li>
           <li className="my-auto"><Link href="/projects">Projects</Link></li>
           <li className="my-auto"><Link href="/skills">Skills</Link></li>

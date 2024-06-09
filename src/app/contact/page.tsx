@@ -39,7 +39,7 @@ export default function Home() {
     <main className="flex flex-col md:flex-row mt-12 ">
       <Toaster />
       <div className="mx-auto flex flex-col">
-        <form className="flex flex-col space-y-3 md:space-y-4 w-96 text-secondary font-semibold" name='form' onSubmit={(e) => { handleSubmit(e) }}>
+        <form className="flex flex-col space-y-3 md:space-y-4 w-96 text-secondary font-semibold animate-fadeUp" name='form' onSubmit={(e) => { handleSubmit(e) }}>
           <label htmlFor='name' className='text-2xl md:text-3xl'>Your name:</label>
           <input type='text' name='name' value={name} onChange={(e) => { setName(e.target.value) }} className='text-black rounded-md h-9 px-2 border border-secondary' required />
 
