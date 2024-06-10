@@ -8,7 +8,7 @@ export default function Home() {
           src="/picture.jpg"
           width={250}
           height={200}
-          alt="Picture of me" className="rounded-full mx-auto animate-fadeUp" />
+          alt="Picture of me" className="rounded-full mx-auto animate-fadeUp transition delay-200" />
         <div className="flex flex-col text-center md:text-left text-secondary space-y-2 md:space-y-4 px-4 ">
           <span className="text-4xl font-semibold animate-fadeUp">Hello! My name is</span>
           <span className="text-6xl text-primary font-extrabold animate-fadeUp">Juan Antonio Figuera!</span>

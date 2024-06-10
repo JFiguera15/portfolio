@@ -52,10 +52,28 @@ export default function Projects() {
             link={"https://github.com/JFiguera15/GestionTiempo"} />
             <ProjectCard
             title={"This portfolio"}
-            text={"Made for practice and being able to show off my skills practically"}
+            text={"Made for practice and being able to show off my skills practically."}
             image="portfolio.png"
             tech={["NextJS"]}
             link={"https://github.com/JFiguera15/portfolio"} />
+            <ProjectCard
+            title={"Anima Beyond Fantasy Simulator"}
+            text={"Performs the combat and initiative calculations for the TTRPG Anima Beyond Fantasy."}
+            image="anima.png"
+            tech={["Java"]}
+            link={"https://github.com/JFiguera15/Anima"} />
+            <ProjectCard
+            title={"Bag budget calculator"}
+            text={"Calculates the costs in Venezuelan Bolivares and US Dollars for a bag handcrafting startup, in accordance to the clients specifications."}
+            image="budgeting.png"
+            tech={["Java"]}
+            link={"https://github.com/JFiguera15/budgeting"} />
+            <ProjectCard
+            title={"Tic Tac Toe"}
+            text={"Tic tac toe game made as a project to finish my first ever programming class."}
+            image="tictactoe.png"
+            tech={["Java"]}
+            link={"https://github.com/JFiguera15/Triqui"} />
         </div>
       </div>
     </main>
