@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Comfortaa, Gabarito } from "next/font/google";
 import "./globals.css";
-import Link from 'next/link'
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 const gabarito = Gabarito({ subsets: ["latin"] });
 
@@ -17,26 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={gabarito.className}>
-        <ul className="flex flex-row  mt-8 space-x-4 font-bold text-xl md:text-3xl justify-center md:justify-end md:pr-10 [&_li:hover]:text-primary [&_li:hover]:-translate-y-2 text-secondary animate-fadeDown">
-          <li className="my-auto transition ease-in-out"><Link href="/">About me</Link></li>
-          <li className="my-auto transition ease-in-out"><Link href="/projects">Projects</Link></li>
-          <li className="my-auto transition ease-in-out"><Link href="/skills">Skills</Link></li>
-          <li className="my-auto transition ease-in-out"><Link href="/contact">Contact me</Link></li>
-        </ul>
+        <Navbar/>
         {children}
         <div className="py-16 md:py-0"></div>
-        <footer className="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-secondary dark:border-gray-600">
-          <span className="text-sm text-gray-300 sm:text-center dark:text-gray-300">Made by Juan Figuera using NextJS.</span>
-          <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-300 dark:text-gray-300 sm:mt-0">
-            <li>
-              <a href="https://www.linkedin.com/in/juan-antonio-figuera/" target="_blank" className="hover:underline hover:text-gray-500 me-4 md:me-6">Linkedin</a>
-            </li>
-            <li>
-              <a href="https://github.com/JFiguera15" className="hover:underline hover:text-gray-500 me-4 md:me-6" target="_blank">Github</a>
-            </li>
-          </ul>
-        </footer>
-
+        <Footer/>
       </body>
 
     </html>

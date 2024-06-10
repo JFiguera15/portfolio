@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const plugin = require('tailwindcss/plugin');
 
 const config: Config = {
   content: [
@@ -10,12 +11,12 @@ const config: Config = {
     extend: {
       keyframes: {
         fadeDown: {
-          '0%': { transform: 'translateY(-30px) scale(0.9)', opacity:'0'},
-          '100%': { transform: 'translateY(0px) scale(1)', opacity:'1' },
+          '0%': { transform: 'translateY(-30px) scale(0.9)', opacity: '0' },
+          '100%': { transform: 'translateY(0px) scale(1)', opacity: '1' },
         },
         fadeUp: {
-          '0%': { transform: 'translateY(30px) scale(0.9)', opacity:'0'},
-          '100%': { transform: 'translateY(0px) scale(1)', opacity:'1' },
+          '0%': { transform: 'translateY(30px) scale(0.9)', opacity: '0' },
+          '100%': { transform: 'translateY(0px) scale(1)', opacity: '1' },
         }
       },
       animation: {
@@ -33,6 +34,12 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities({
+        'animate-delay': (value) => ({ animationDelay: value }),
+      }, { values: theme('transitionDelay') })
+    }),
+  ],
 };
 export default config;
