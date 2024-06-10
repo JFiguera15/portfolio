@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Comfortaa, Gabarito } from "next/font/google";
 import "./globals.css";
 import Link from 'next/link'
-const inter = Inter({ subsets: ["latin"] });
-const comfortaa = Comfortaa({ subsets: ["latin"] });
+
 const gabarito = Gabarito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={gabarito.className}>
         <ul className="flex flex-row  mt-8 space-x-4 font-bold text-xl md:text-3xl justify-center md:justify-end md:pr-10 [&_li:hover]:text-primary [&_li:hover]:-translate-y-2 text-secondary animate-fadeDown">
-          <li className="my-auto cursor-pointer transition ease-in-out"><Link href="/">About me</Link></li>
+          <li className="my-auto transition ease-in-out"><Link href="/">About me</Link></li>
           <li className="my-auto transition ease-in-out"><Link href="/projects">Projects</Link></li>
           <li className="my-auto transition ease-in-out"><Link href="/skills">Skills</Link></li>
           <li className="my-auto transition ease-in-out"><Link href="/contact">Contact me</Link></li>

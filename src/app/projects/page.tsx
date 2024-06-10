@@ -63,8 +63,8 @@ export default function Projects() {
             tech={["Java"]}
             link={"https://github.com/JFiguera15/Anima"} />
             <ProjectCard
-            title={"Bag budget calculator"}
-            text={"Calculates the costs in Venezuelan Bolivares and US Dollars for a bag handcrafting startup, in accordance to the clients specifications."}
+            title={"Handbag budget calculator"}
+            text={"Calculates the costs in Venezuelan Bolivares and US Dollars for a Handbag handcrafting startup, in accordance to the clients specifications."}
             image="budgeting.png"
             tech={["Java"]}
             link={"https://github.com/JFiguera15/budgeting"} />
