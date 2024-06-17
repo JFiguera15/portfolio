@@ -54,7 +54,7 @@ export default function Projects() {
             title={"This portfolio"}
             text={"Made for practice and being able to show off my skills practically."}
             image="portfolio.png"
-            tech={["NextJS"]}
+            tech={["NextJS", "Typescript"]}
             link={"https://github.com/JFiguera15/portfolio"} />
             <ProjectCard
             title={"Anima Beyond Fantasy Simulator"}
