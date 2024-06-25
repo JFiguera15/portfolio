@@ -18,7 +18,6 @@ export async function POST(request: Request) {
                 console.log(error);
                 reject(error);
             } else {
-                console.log("Server is ready to take our messages");
                 resolve(success);
             }
         });
@@ -40,7 +39,6 @@ export async function POST(request: Request) {
                 console.error(err);
                 reject(err);
             } else {
-                console.log(info);
                 resolve(info);
             }
         });
