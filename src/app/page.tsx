@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col md:flex-row mt-12 md:mt-44 md:ml-24 md:mb-32">
-      <div className="md:h-64 flex flex-col md:flex-row md:space-x-28 space-y-4 md:space-y-0">
+    <main className="flex flex-col xl:flex-row mt-12 md:translate-y-16 xl:translate-y-0 xl:mt-44 xl:ml-24 xl:mb-32">
+      <div className="xl:h-64 flex flex-col xl:flex-row xl:space-x-28 space-y-4 xl:space-y-0">
         <Image
           src="/picture.jpg"
           width={250}
           height={200}
           alt="Picture of me" className="rounded-full mx-auto animate-fadeUp" />
-        <div className="flex flex-col text-center md:text-left text-secondary space-y-2 md:space-y-4 px-4 ">
+        <div className="flex flex-col text-center xl:text-left text-secondary space-y-2 xl:space-y-4 px-4 ">
           <span className="text-4xl font-semibold animate-fadeUp">Hello! My name is</span>
           <span className="text-6xl text-primary font-extrabold animate-fadeUp">Juan Antonio Figuera!</span>
           <span className="text-5xl font-bold animate-fadeUp">A Software Developer.</span>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 
 function ProjectCard({ title, image, text, tech, link }) {
-  return <div className="flex flex-col border-4 p-4 border-primary shadow-xl rounded-md bg-secondary text-gray-300 text-center max-w-96 space-y-4 mx-auto max-h-max transition ease-in-out hover:scale-110">
+  return <div className="flex flex-col border-4 p-4 border-primary shadow-xl rounded-md bg-secondary text-gray-300 text-center max-w-96 space-y-4 mx-auto max-h-max transition ease-in-out xl:hover:scale-110">
     <span className="text-2xl font-bold">{title}</span>
     <Image
       src={"/" + image}
@@ -29,9 +29,9 @@ function ProjectCard({ title, image, text, tech, link }) {
 export default function Projects() {
   return (
     <main className="flex flex-col mt-12">
-      <div className="mx-auto flex flex-col space-y-4 md:space-y-0">
+      <div className="mx-auto flex flex-col space-y-4 md:space-y-0 px-4">
         <h1 className="text-4xl text-center text-secondary mb-4 md:mb-12 font-extrabold animate-fadeDown">Projects I&apos;ve made:</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-4 gap-y-4 md:gap-y-4 md:pb-24 animate-fadeUp">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-4 gap-y-4 md:gap-y-4 xl:pb-24 animate-fadeUp">
           <ProjectCard
             title={"Automatic TTS Reader"}
             text={"This program automatically detects the text on a section of the screen and reads it automatically in different languages."}

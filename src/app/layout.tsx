@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={gabarito.className}>
         <Navbar/>
         {children}
-        <div className="py-16 md:py-0"></div>
+        <div className="py-16 md:py-12 xl:py-0"></div>
         <Footer/>
       </body>
 
