@@ -48,18 +48,18 @@ export default async function Home({ params: { locale } }) {
           <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110">
             <span className="font-bold">{t("tools")}</span>
             <ul className="ml-3 mt-4 space-y-3">
-              <li className="flex space-x-2"><Image src={"/git.svg"} alt="C#" width={24} height={24}/><span>Git</span></li>
-              <li className="flex space-x-2"><Image src={"/github.svg"} alt="C#" width={24} height={24}/><span>Github</span></li>
-              <li className="flex space-x-2"><Image src={"/vscode.svg"} alt="C#" width={24} height={24}/><span>VSCode</span></li>
+              <li className="flex space-x-2"><Image src={"/git.svg"} alt="Git" width={24} height={24}/><span>Git</span></li>
+              <li className="flex space-x-2"><Image src={"/github.svg"} alt="Github" width={24} height={24}/><span>Github</span></li>
+              <li className="flex space-x-2"><Image src={"/vscode.svg"} alt="Visual Studio Code" width={24} height={24}/><span>VSCode</span></li>
             </ul>
           </div>
           <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110">
             <span className="font-bold">{t("others")}</span>
             <ul className="ml-3 mt-4 space-y-3">
-              <li className="flex space-x-2"><span>📷</span><span>{t("editing")}</span></li>
-              <li className="flex space-x-2"><span>📝</span><span>{t("translation")}</span></li>
-              <li className="flex space-x-2"><span>🗣</span><span>{t("communication")}</span></li>
-              <li className="flex space-x-2"><span>🤝</span><span>{t("teamwork")}</span></li>
+              <li className="flex space-x-2"><Image src={"/editing.svg"} alt="C#" width={24} height={24}/><span>{t("editing")}</span></li>
+              <li className="flex space-x-2"><Image src={"/translation.svg"} alt="C#" width={24} height={24}/><span>{t("translation")}</span></li>
+              <li className="flex space-x-2"><Image src={"/communication.svg"} alt="C#" width={24} height={24}/><span>{t("communication")}</span></li>
+              <li className="flex space-x-2"><Image src={"/teamwork.svg"} alt="C#" width={24} height={24}/><span>{t("teamwork")}</span></li>
             </ul>
           </div>
         </div>
