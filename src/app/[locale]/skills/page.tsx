@@ -1,11 +1,15 @@
-export default function Home() {
+import initTranslations from "@/app/i18n";
+
+export default async function Home({ params: { locale } }) {
+  const { t } = await initTranslations(locale, ["skills"], 0, 0)
+
   return (
     <main className="flex flex-col mt-12 px-4">
       <div className="flex flex-col mx-auto">
-        <h1 className="text-4xl text-center text-secondary font-extrabold animate-fadeDown">My Skills:</h1>
+        <h1 className="text-4xl text-center text-secondary font-extrabold animate-fadeDown">{t("mySkills")}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 md:gap-x-6 animate-fadeUp">
           <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110">
-            <span className="font-bold">Web Development</span>
+            <span className="font-bold">{t("webDev")}</span>
             <ul className="list-disc list-inside ml-3">
               <li>HTML</li>
               <li>CSS</li>
@@ -16,7 +20,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110">
-            <span className="font-bold">Desktop Development</span>
+            <span className="font-bold">{t("desktopDev")}</span>
             <ul className="list-disc list-inside ml-3">
               <li>Java</li>
               <li>Python</li>
@@ -24,7 +28,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110">
-            <span className="font-bold">Database Management</span>
+            <span className="font-bold">{t("db")}</span>
             <ul className="list-disc list-inside ml-3">
               <li>MySQL</li>
               <li>PostgreSQL</li>
@@ -32,7 +36,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110">
-            <span className="font-bold">General Development skills</span>
+            <span className="font-bold">{t("generalSkills")}</span>
             <ul className="list-disc list-inside ml-3">
               <li>Unity</li>
               <li>C/C++</li>
@@ -40,7 +44,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110">
-            <span className="font-bold">Tools</span> 
+            <span className="font-bold">{t("tools")}</span>
             <ul className="list-disc list-inside ml-3">
               <li>Git</li>
               <li>Github</li>
@@ -48,12 +52,12 @@ export default function Home() {
             </ul>
           </div>
           <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110">
-            <span className="font-bold">Others</span>
+            <span className="font-bold">{t("others")}</span>
             <ul className="list-disc list-inside ml-3">
-              <li>Photo & Video Editing</li>
-              <li>English - Spanish Translation</li>
-              <li>Communication</li>
-              <li>Teamwork</li>
+              <li>{t("editing")}</li>
+              <li>{t("translation")}</li>
+              <li>{t("communication")}</li>
+              <li>{t("teamwork")}</li>
             </ul>
           </div>
         </div>
