@@ -13,7 +13,7 @@ export default function Navbar() {
 
     return (
 
-        <ul className="flex flex-row flex-wrap mt-8 space-x-4 font-bold text-xl md:text-3xl justify-center md:justify-end md:pr-10 [&_li:hover]:text-primary text-secondary animate-fadeDown transition ease-out">
+        <ul className="flex flex-row flex-wrap mt-8 space-x-4 font-bold text-2xl md:text-3xl justify-center md:justify-end md:pr-10 [&_li:hover]:text-primary text-secondary animate-fadeDown transition ease-out">
             <li className='absolute left-8'><LanguageChanger /></li>
             <div className='hidden sm:flex sm:space-x-4'>
                 <NavLinks />
