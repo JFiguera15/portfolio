@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import LanguageChanger from './LanguageChanger';
 import NavLinks from './NavLink';
-import Image from 'next/image';
+import MenuButton from './MenuButton';
 
 export default function Navbar() {
 
@@ -18,7 +18,7 @@ export default function Navbar() {
             <div className='hidden sm:flex sm:space-x-4'>
                 <NavLinks />
             </div>
-            <button onClick={() => {setOpen(!open); setRotate(!rotate)}} className={`${rotate && "rotate-90"} transition-transform ease-out sm:hidden absolute right-8`}><Image src={"/menu.svg"} alt="menu" width={24} height={24} /></button>
+            <button onClick={() => {setOpen(!open); setRotate(!rotate)}} className={`${rotate && "rotate-90"} transition-transform ease-out sm:hidden absolute right-8`}><MenuButton/></button>
             {open && (
                 <div className='flex flex-col basis-full mt-12 items-center animate-fadeDown'>
                     <NavLinks />
