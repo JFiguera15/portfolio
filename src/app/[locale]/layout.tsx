@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import i18nConfig from "@@/i18nConfig";
 import TranslationsProvider from "./components/TranslationsProvider";
 import initTranslations from "../i18n";
+import LanguageChanger from "./components/LanguageChanger";
 
 const gabarito = Gabarito({ subsets: ["latin"] });
 const i18nNamespaces = ["common", "contactMe"]
