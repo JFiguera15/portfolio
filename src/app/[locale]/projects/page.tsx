@@ -58,13 +58,6 @@ export default async function Projects({ params: { locale } }) {
             link={"https://github.com/JFiguera15/GestionTiempo"}
             lang={t} />
           <ProjectCard
-            title={t("portfolioTitle")}
-            text={t("portfolioDesc")}
-            image="portfolio.png"
-            tech={["NextJS", "Typescript"]}
-            link={"https://github.com/JFiguera15/portfolio"}
-            lang={t} />
-          <ProjectCard
             title={t("animaTitle")}
             text={t("animaDesc")}
             image="anima.png"
