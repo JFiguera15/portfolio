@@ -3,7 +3,7 @@ import initTranslations from "@/app/i18n";
 
 function ProjectCard({ title, image, text, tech, link, lang }) {
 
-  return <div className="flex flex-col border-4 p-4 border-primary shadow-xl rounded-md bg-secondary text-gray-300 text-center max-w-96 space-y-4 mx-auto max-h-max transition ease-in-out xl:hover:scale-110">
+  return <div className="flex flex-col border-4 p-4 border-primary shadow-2xl rounded-2xl bg-secondary text-gray-300 text-center max-w-96 space-y-4 mx-auto max-h-max transition ease-in-out xl:hover:scale-110">
     <span className="text-2xl font-bold">{title}</span>
     <Image
       src={"/" + image}

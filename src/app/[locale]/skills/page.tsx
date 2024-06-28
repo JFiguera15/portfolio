@@ -10,7 +10,7 @@ export default async function Home({ params: { locale } }) {
       <div className="flex flex-col mx-auto">
         <h1 className="text-4xl text-center text-secondary font-extrabold animate-fadeDown">{t("mySkills")}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 md:gap-x-6 animate-fadeUp">
-          <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110">
+          <div className="bg-secondary text-gray-300 text-xl rounded-2xl mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110 shadow-xl">
             <span className="font-bold">{t("webDev")}</span>
             <ul className="ml-3 mt-4 space-y-3">
               <li className="flex space-x-2"><Image src={"/html5.svg"} alt="HTML" width={24} height={24}/><span>HTML</span></li>
@@ -21,7 +21,7 @@ export default async function Home({ params: { locale } }) {
               <li className="flex space-x-2"><Image src={"/NodeJS.svg"} alt="NodeJS" width={24} height={24}/><span>NodeJS</span></li>
             </ul>
           </div>
-          <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110">
+          <div className="bg-secondary text-gray-300 text-xl rounded-2xl mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110 shadow-xl">
             <span className="font-bold">{t("desktopDev")}</span>
             <ul className="ml-3 mt-4 space-y-3">
               <li className="flex space-x-2"><Image src={"/Java.svg"} alt="Java" width={24} height={24}/><span>Java</span></li>
@@ -29,7 +29,7 @@ export default async function Home({ params: { locale } }) {
               <li className="flex space-x-2"><Image src={"/Ruby.svg"} alt="Ruby" width={24} height={24}/><span>Ruby</span></li>
             </ul>
           </div>
-          <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110">
+          <div className="bg-secondary text-gray-300 text-xl rounded-2xl mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110 shadow-xl">
             <span className="font-bold">{t("db")}</span>
             <ul className="ml-3 mt-4 space-y-3">
               <li className="flex space-x-2"><Image src={"/mysql.svg"} alt="MySQL" width={24} height={24}/><span>MySQL</span></li>
@@ -37,7 +37,7 @@ export default async function Home({ params: { locale } }) {
               <li className="flex space-x-2"><Image src={"/sqlite.svg"} alt="SQLite3" width={24} height={24}/><span>SQLite3</span></li>
             </ul>
           </div>
-          <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110">
+          <div className="bg-secondary text-gray-300 text-xl rounded-2xl mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110 shadow-xl">
             <span className="font-bold">{t("generalSkills")}</span>
             <ul className="ml-3 mt-4 space-y-3">
               <li className="flex space-x-2"><Image src={"/unity_dark.svg"} alt="Unity" width={24} height={24}/><span>Unity</span></li>
@@ -45,7 +45,7 @@ export default async function Home({ params: { locale } }) {
               <li className="flex space-x-2"><Image src={"/csharp.svg"} alt="C#" width={24} height={24}/><span>C#</span></li>
             </ul>
           </div>
-          <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110">
+          <div className="bg-secondary text-gray-300 text-xl rounded-2xl mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110 shadow-xl">
             <span className="font-bold">{t("tools")}</span>
             <ul className="ml-3 mt-4 space-y-3">
               <li className="flex space-x-2"><Image src={"/git.svg"} alt="Git" width={24} height={24}/><span>Git</span></li>
@@ -53,7 +53,7 @@ export default async function Home({ params: { locale } }) {
               <li className="flex space-x-2"><Image src={"/vscode.svg"} alt="Visual Studio Code" width={24} height={24}/><span>VSCode</span></li>
             </ul>
           </div>
-          <div className="bg-secondary text-gray-300 text-xl rounded-md mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110">
+          <div className="bg-secondary text-gray-300 text-xl rounded-2xl mt-8 p-4 border-4 border-primary transition ease-in-out xl:hover:scale-110 shadow-xl">
             <span className="font-bold">{t("others")}</span>
             <ul className="ml-3 mt-4 space-y-3">
               <li className="flex space-x-2"><Image src={"/editing.svg"} alt="C#" width={24} height={24}/><span>{t("editing")}</span></li>
