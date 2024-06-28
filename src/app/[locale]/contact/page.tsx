@@ -53,7 +53,7 @@ export default function Home() {
           <label htmlFor='message' className='text-2xl md:text-3xl'>{t("contactMe:message")}</label>
           <textarea name='message' value={message} onChange={(e) => { setMessage(e.target.value) }} className='text-black rounded-md h-36 px-2 border border-secondary' required />
 
-          <input type='submit' className='mt-2 hover:bg-secondary hover:text-slate-400 text-black bg-slate-400 w-28 border border-secondary' value={t("submit")}/>
+          <input type='submit' className='mt-2 hover:bg-secondary hover:text-slate-400 text-black bg-slate-400 w-full border border-secondary mx-auto' value={t("submit")}/>
         </form >
       </div>
     </main>

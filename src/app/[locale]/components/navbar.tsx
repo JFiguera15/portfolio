@@ -20,7 +20,7 @@ export default function Navbar() {
             </div>
             <button onClick={() => {setOpen(!open); setRotate(!rotate)}} className={`${rotate && "rotate-90"} transition-transform ease-out sm:hidden absolute right-8`}><MenuButton/></button>
             {open && (
-                <div className='flex flex-col basis-full mt-12 items-center animate-fadeDown'>
+                <div className='flex flex-col basis-full mt-12 items-center animate-fadeDown sm:hidden'>
                     <NavLinks />
                 </div>
 
