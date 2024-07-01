@@ -11,7 +11,7 @@ export default function LanguageChanger() {
   const currentLocale = i18n.language;
   const router = useRouter();
   const currentPathname = usePathname();
-  const [visible, setVisible] = useState(true)
+  const [visible, setVisible] = useState(false)
 
   const handleChange = e => {
     const newLocale = e.target.text.toLowerCase();
@@ -49,8 +49,8 @@ export default function LanguageChanger() {
         </svg>
       </button>
 
-      <div id="dropdown" className="z-10 bg-secondary divide-y divide-gray-100 rounded-lg shadow w-44">
-        <ul className="py-2 text-sm text-gray-300" hidden={visible} aria-labelledby="dropdownDefaultButton">
+      <div id="dropdown" className={`z-10 bg-secondary divide-y divide-gray-100 rounded-lg shadow w-44 ${visible ? "scale-100" : "scale-0"} transition-all ease-out origin-top-left`}>
+        <ul className="py-2 text-sm text-gray-300" aria-labelledby="dropdownDefaultButton">
           <li>
             <a href="#" onClick={handleChange} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">EN</a>
           </li>
