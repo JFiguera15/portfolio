@@ -15,6 +15,7 @@
     "next": "^14.2.4",
     "next-i18n-router": "^5.5.0",
     "nodemailer": "^6.9.13",
+    "portfolio": "file:",
     "react": "^18",
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",

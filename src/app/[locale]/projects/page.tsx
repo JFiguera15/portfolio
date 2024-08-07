@@ -78,6 +78,13 @@ export default async function Projects({ params: { locale } }) {
             tech={["Java"]}
             link={"https://github.com/JFiguera15/Triqui"}
             lang={t} />
+          <ProjectCard
+            title={t("bookTalkTitle")}
+            text={t("bookTalkDesc")}
+            image="Booktalk.png"
+            tech={["NestJS", "GraphQL"]}
+            link={"https://github.com/No-Country-simulation/c19-137-m-node-react"}
+            lang={t} />
         </div>
       </div>
     </main>
