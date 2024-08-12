@@ -58,6 +58,13 @@ export default async function Projects({ params: { locale } }) {
             link={"https://github.com/JFiguera15/GestionTiempo"}
             lang={t} />
           <ProjectCard
+            title={t("servicioTitle")}
+            text={t("servicioDesc")}
+            image="servicio.png"
+            tech={["Python"]}
+            link={"https://github.com/JFiguera15/Servicio"}
+            lang={t} />
+          <ProjectCard
             title={t("animaTitle")}
             text={t("animaDesc")}
             image="anima.png"
@@ -72,18 +79,18 @@ export default async function Projects({ params: { locale } }) {
             link={"https://github.com/JFiguera15/budgeting"}
             lang={t} />
           <ProjectCard
-            title={t("triquiTitle")}
-            text={t("triquiDesc")}
-            image="tictactoe.png"
-            tech={["Java"]}
-            link={"https://github.com/JFiguera15/Triqui"}
-            lang={t} />
-          <ProjectCard
             title={t("bookTalkTitle")}
             text={t("bookTalkDesc")}
             image="Booktalk.png"
             tech={["NestJS", "GraphQL"]}
             link={"https://github.com/No-Country-simulation/c19-137-m-node-react"}
+            lang={t} />
+          <ProjectCard
+            title={t("triquiTitle")}
+            text={t("triquiDesc")}
+            image="tictactoe.png"
+            tech={["Java"]}
+            link={"https://github.com/JFiguera15/Triqui"}
             lang={t} />
         </div>
       </div>
