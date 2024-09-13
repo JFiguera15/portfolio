@@ -1,7 +1,7 @@
 import Image from "next/image";
 import initTranslations from "@/app/i18n";
 
-function ProjectCard({ title, image, text, tech, link, lang }) {
+function ProjectCard({ title, image, text, tech, link, lang, repo }) {
 
   return <div className="flex flex-col border-4 p-4 border-primary shadow-2xl rounded-2xl bg-secondary text-gray-300 text-center max-w-96 space-y-4 mx-auto max-h-max transition ease-in-out xl:hover:scale-110">
     <span className="text-2xl font-bold">{title}</span>
@@ -23,7 +23,7 @@ function ProjectCard({ title, image, text, tech, link, lang }) {
           /></li>
       ))}
     </ul>
-    <a className="text-sm underline font-semibold hover:text-gray-500" href={link} target="_blank">{lang("repo")}</a>
+    <a className="text-sm underline font-semibold hover:text-gray-500" href={link} target="_blank">{repo ? lang("repo") : "Link"}</a>
   </div>;
 }
 
@@ -42,56 +42,72 @@ export default async function Projects({ params: { locale } }) {
             image="tts.png"
             tech={["Python"]}
             link={"https://github.com/JFiguera15/TTS"}
-            lang={t} />
+            lang={t}
+            repo={true} />
           <ProjectCard
             title={t("gachaTitle")}
             text={t("gachaDesc")}
             image="gachasim.png"
             tech={["Ruby"]}
             link={"https://github.com/JFiguera15/GachaSim"}
-            lang={t} />
+            lang={t}
+            repo={true} />
           <ProjectCard
             title={t("hrTitle")}
             text={t("hrDesc")}
             image="HR.png"
             tech={["ReactJS", "NodeJS"]}
             link={"https://github.com/JFiguera15/GestionTiempo"}
-            lang={t} />
+            lang={t}
+            repo={true} />
           <ProjectCard
             title={t("servicioTitle")}
             text={t("servicioDesc")}
             image="servicio.png"
             tech={["Python"]}
             link={"https://github.com/JFiguera15/Servicio"}
-            lang={t} />
+            lang={t}
+            repo={true} />
           <ProjectCard
             title={t("animaTitle")}
             text={t("animaDesc")}
             image="anima.png"
             tech={["Java"]}
             link={"https://github.com/JFiguera15/Anima"}
-            lang={t} />
+            lang={t}
+            repo={true} />
           <ProjectCard
             title={t("budgetTitle")}
             text={t("budgetDesc")}
             image="budgeting.png"
             tech={["Java"]}
             link={"https://github.com/JFiguera15/budgeting"}
-            lang={t} />
+            lang={t}
+            repo={true} />
           <ProjectCard
             title={t("bookTalkTitle")}
             text={t("bookTalkDesc")}
             image="Booktalk.png"
             tech={["NestJS", "GraphQL"]}
             link={"https://github.com/No-Country-simulation/c19-137-m-node-react"}
-            lang={t} />
+            lang={t}
+            repo={true} />
           <ProjectCard
             title={t("triquiTitle")}
             text={t("triquiDesc")}
             image="tictactoe.png"
             tech={["Java"]}
             link={"https://github.com/JFiguera15/Triqui"}
-            lang={t} />
+            lang={t}
+            repo={true} />
+            <ProjectCard
+            title={t("quizTitle")}
+            text={t("quizDesc")}
+            image="quiz.png"
+            tech={["ReactJS", "NodeJS"]}
+            link={"https://the-anime-quiz.vercel.app/"}
+            lang={t}
+            repo={false} />
         </div>
       </div>
     </main>
